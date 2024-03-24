@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="feedbackstyle.css">
+        <link rel="stylesheet" href="../ExternalCSS_for_all_pages.css">
+        
+        <title>Feedback </title>
+    </head>
+    <body>
+
+        <!--header section-->
+
+        <section class="header">
+
+            <a href="../Home/Home.html" class="logo">Discover <span>Sri Lanka.</span></a>
+
+            <nav class="navbar">
+                <a href="../Home/Home.html">Home</a>
+                <a href="../../Student01/COURSEWORK/purchase.html">Shop</a>
+                <a href="../../Student03/Quiz/Quiz.html">Quiz</a>
+                <a href="../../Student04/SiteMap/Sitemap.html">Site map</a>
+                <a href="Feedback.html" id="active_page">Feedback form</a>
+                <a href="../../Student04/Imggallary/imagegallary.html">Gallery</a>
+                <a href="../../Student03/StudentDetails/Stdent.html">About us</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+            
+            
+        </section>
+
+
+
+        <!--Form content-->
+
+        <div class="content">
+            <div class="Container">
+                <h1 class="text-center font-weight-bold">Feedback</h1>
+                <h2>Give us your Feedback</h2>
+                <hr>
+                <h2>How do you rate your overall experience?</h2>
+                    <br>
+
+                <form id="feedbackForm">
+                    
+                    <div class="row">
+                        <div>
+                            <label class="lables">Full Name :<br>
+                                <input type="text" class="text-input-name" id="name"  placeholder="Enter your Full name">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="lables">Email :<br>
+                                <input type="email" class="text-input-email" id="email"  placeholder="Enter your Email" >
+                            </label>
+                        </div>
+                    </div>
+
+                        <div>
+                            <label class="lables">Phone number :<br>
+                                <input type="tel" class="text-input-phone" id="phone" placeholder="Enter your phone number">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="lables">Age :<br>
+                                <input type="number" class="text-input-age" id="age" placeholder="Enter your age" min="1" max="120">
+                            </label>
+                        </div>
+
+                    <div class="text-center">
+                        <div>
+                            <h2>Express your experience of our website with an emoji</h2>
+                            <label class="emoji-radio">
+                                <input type="radio" name="emoji_reaction"  value="1" >
+                                <span class="emoji">😞</span>
+                            </label>
+
+                            <label class="emoji-radio">
+                                <input type="radio" name="emoji_reaction"  value="2">
+                                <span class="emoji">😐</span>
+                            </label>
+
+                            <label class="emoji-radio">
+                                <input type="radio" name="emoji_reaction"  value="3" >
+                                <span class="emoji">🙂</span>
+                            </label>
+
+                            <label class="emoji-radio">
+                                <input type="radio" name="emoji_reaction"  value="4" >
+                                <span class="emoji">😄</span>
+                            </label>
+
+                            <label class="emoji-radio">
+                                <input type="radio" name="emoji_reaction"  value="5" checked>
+                                <span class="emoji">😊</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+
+                    <label class="lables">Comments :<br>
+                        <textarea class="Comment" id="Comment" cols="30" rows="10" placeholder="Write your comments"></textarea>
+                    </label>
+
+                    <div class="submit-btn-div">
+                        <button id="submit-btn" class="submit-button">Submit</button>
+                    </div>
+                </form>
+
+
+                <div class="alert" id="popup">
+                    <p><strong>Thank You!</strong> we appreciate your feedback 🤗</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="feedbackjs.js"></script>
+        
+
+
+
+        <!--footer section -->
+
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="../Home/Home.html"><i class="fas fa-angle-right"></i>Home</a>
+                    <a href="../../Student03/Quiz/Quiz.html"><i class="fas fa-angle-right"></i>Shop</a>
+                    <a href="../../Student04/SiteMap/Sitemap.html"><i class="fas fa-angle-right"></i>Quiz</a>
+                    <a href="../../Student04/SiteMap/Sitemap.html"><i class="fas fa-angle-right"></i>Site map</a>
+                    <a href="Feedback.html"><i class="fas fa-angle-right"></i>Feedback form</a>
+                    <a href="../../Student04/Imggallary/imagegallary.html"><i class="fas fa-angle-right"></i>Gallery</a>
+                    <a href="../../Student03/StudentDetails/Stdent.html"><i class="fas fa-angle-right"></i>About us</a>
+
+                </div>
+
+                <div class="box">
+                    <h3>Our team</h3>
+                    <a href="../../Student01/COURSEWORK/Student1_page_editor.html "><i class="fas fa-angle-right"></i>Binul</a>
+                    <a href="../page_editor(sasanka).html "><i class="fas fa-angle-right"></i>Sasanka</a>
+                    <a href="../../Student03/pageEditor3.html "><i class="fas fa-angle-right"></i>Janiru</a>
+                    <a href="../../Student04/Student4_page_editor.html"><i class="fas fa-angle-right"></i>Imeth</a>
+                    
+                </div>
+
+
+                <div class="box">
+                    <h3>Follow us</h3>
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="https://instagram.com/?lang=en"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="https://linkedin.com/?lang=en"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    
+                </div>
+            </div>
+
+            <div class="credit"> Created by <a href="../../Student02/page_editor(sasanka).html"><span>Sasanka Bandara</span></a></div>
+
+        </section>
+
+
+    </body>
+</html>

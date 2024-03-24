@@ -1,0 +1,207 @@
+/* Name: Sasanka Bandara
+   UOW ID: w1998841
+   IIT ID: 20220496
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');  /* importing Popins google font*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');   /*Font awsome font*/
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #bb72da;
+}
+
+
+
+/*Header section*/
+
+section{
+    padding: 5rem 10%;
+}
+
+.header{
+    position: sticky;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    background-color:#fff;
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color:#000;
+}
+
+.header .logo span:hover {
+    color: rgb(160, 96, 53);
+
+}
+
+.logo span {
+    color: rgb(53, 160, 67);
+    font: 40px;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #000;
+}
+
+.header .navbar a:hover{
+    color: #bb72da;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #000;
+    display: none;
+}
+#active_page {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+
+/*Footer css part*/
+
+.footer{
+    background: url(footer.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.footer .box-container{
+    margin-left: 4cm;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 3rem ;
+
+}
+
+
+.footer .box-container .box h3{
+    color: #fff;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+
+.footer .box-container .box a{
+    color: #fff9;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+}
+
+.footer .box-container .box a i{
+    color: #bb72da;
+    padding-right: .5rem;
+    transition: .2s linear ;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: .1rem solid #fff9;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.footer .credit span{
+    color: yellow;
+}
+
+
+
+/*media quries*/
+
+@media (max-width:1200px){
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 54%;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px){
+
+
+    #menu-btn{
+       
+        display: inline-block;
+        transition: .2s linear;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background-color: #fff;
+        border-top: .1rem solid #000;
+        padding: 2rem;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="../../Student02/ExternalCSS_for_all_pages.css">
+
+    <script src="script.js"></script>
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <section class="header">
+    <a href="home" class="logo">Discover <span>Sri Lanka.</span></a>
+    <nav class="navbar">
+      <a href="# ">Home</a>
+      <a href="# ">Shop</a>
+      <a href="# ">Quies</a>
+      <a href="# ">Site map</a>
+      <a href="# ">Feed back form</a>
+      <a href="# ">Gallery</a>
+      <a href="# ">About us</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <h1>Checkout</h1>
+  <form action="send_email.php" method="POST" onsubmit="return validateForm()">
+    <label for="name">Name *</label>
+    <input type="text" id="name"  required>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email"  required>
+
+    <label for="phone">Phone *</label>
+    <input type="tel" id="phone" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address"></textarea>
+
+    <label for="payment">Payment Method *</label>
+    <select id="payment" name="payment" required>
+      <option value="">Select payment method</option>
+      <option value="credit">Credit Card</option>
+      <option value="paypal">PayPal</option>
+    </select>
+
+    <input type="submit" value="Place Order" return false;>
+  </form>
+  <script>
+    function validateForm() {
+      var nameInput = document.getElementById("name");
+      var emailInput = document.getElementById("email");
+      var phoneInput = document.getElementById("phone");
+      var paymentSelect = document.getElementById("payment");
+
+      // Check if the required fields are filled
+      if (
+        nameInput.value.trim() === "" ||
+        emailInput.value.trim() === "" ||
+        phoneInput.value.trim() === "" ||
+        paymentSelect.value.trim() === ""
+      ) {
+        alert("Please fill in all the required fields.");
+        return false;
+    }
+    window.location.href = 'thank_you.html';
+    return false;
+  };
+  
+  </script>
+
+  <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="# "><i class="fas fa-angle-right"></i>Home</a>
+                <a href="# "><i class="fas fa-angle-right"></i>Shop</a>
+                <a href="# "><i class="fas fa-angle-right"></i>Quies</a>
+                <a href="# "><i class="fas fa-angle-right"></i>Site map</a>
+                <a href="# "><i class="fas fa-angle-right"></i>Feedback form</a>
+                <a href="# "><i class="fas fa-angle-right"></i>Gallery</a>
+                <a href="# "><i class="fas fa-angle-right"></i>About us</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Our team</h3>
+                <a href="../COURSEWORK/Student1_page_editor.html"><i class="fas fa-angle-right"></i>Binul</a>
+                <a href="../../Student02/page_editor(sasanka).html "><i class="fas fa-angle-right"></i>Sasanka</a>
+                <a href="../../Student03/pageEditor3.html "><i class="fas fa-angle-right"></i>Janiru</a>
+                <a href="../../Student04/Student4_page_editor.html"><i class="fas fa-angle-right"></i>Imeth</a>
+                
+            </div>
+
+            <!--<div class="box">
+                <h3>Our team**</h3>
+                <a href="# "><i class="fas fa-angle-right"></i>**Binul</a>
+                <a href="# "><i class="fas fa-angle-right"></i>**Sasanka</a>
+                <a href="# "><i class="fas fa-angle-right"></i>**Janiru</a>
+                <a href="# "><i class="fas fa-angle-right"></i>**Imeth</a>
+                
+            </div>-->
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://instagram.com/?lang=en"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://linkedin.com/?lang=en"><i class="fab fa-linkedin"></i>Linkedin</a>
+                
+            </div>
+        </div>
+
+        <div class="credit"> Created by <a href="../../Student01/COURSEWORK/chekoutpage.html"><span>Binul De Silva</span></a></div>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!--custom js file link-->
+    <script src="js1.js"></script>
+</html>

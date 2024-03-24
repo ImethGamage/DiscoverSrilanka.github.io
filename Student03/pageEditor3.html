@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page editor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2cm;
+            font-size: 150%;
+            
+            
+        }
+
+        .main_container {
+            display: grid;
+            grid-template-columns: 60% 30%;
+            background-color: rgb(27, 81, 132);
+            padding: 2cm;
+            border-radius: 0.5rem;
+            gap: 2cm;
+        }
+
+        .text {
+            text-align: center;
+            color: #fff;
+        }
+
+        
+        .links{
+            padding: 10px;
+            background-color: rgb(89, 210, 210);
+            border-radius: 10px;
+
+        }
+        .links:hover{
+            background-color: antiquewhite;
+        }
+        .studentimg{
+            width: 80%;
+            height: auto;
+            display: block;
+            float: right;
+            border-radius: 10px;
+        }
+        .studentimg:hover{
+            transform:scale(1.1);
+            transition: 0.4s;
+        }
+        .studentimg:not(:hover){
+            transform:scale(1);
+            transition: 0.4s;
+        }
+        h1{
+            text-align: center;
+            background-color:rgb(27, 81, 132);
+            color:white;
+        }
+        p{
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Page Editor</h1>
+    <div class="main_container">
+        <div class="text">
+            <p>Name: Janiru Walisinghe</p>
+            <p>Uow number: w1998843</p> 
+            <p>IIT Id: 20220497</p>
+            <p>Role: Student 3</p>
+            <p>The following pages were edited by me!</p>
+
+            <div>
+                <h2>Quiz page</h2>
+
+                <p>Created a Qiz using Html,CSS and Java Script.Quiz contains a timer with 60 seconds.
+                    Used buttons to display answers. If the timer is over it will auto submit the quiz and show the score.
+                    Added a start again button in the bottom of the score to reastart the quiz with out refreashing. 
+                </p>
+                <br>
+                <p><a href="Quiz/Quiz.html" class="links">Link to Quiz Page</a></p>
+                <br>
+            
+            
+                <h2>Student Details Page</h2>
+        
+                <p>Created Student details page using HTML and CSS. Added team members photoes in different 
+                    image boxes. when hover over the image it briefly display the required student details.
+    
+                </p>
+                <br>
+        
+                <p><a href="StudentDetails/Stdent.html" class="links">Link to Student Details page.</a></p>
+                <br>
+            
+                <h2>Individual web page</h2>
+            
+                <p>
+                    Created a additional web page regaring wild life of Sri Lanka with using HTML and CSS.
+                    The web page contains some brief informations about some well known animals in sri Lanka and some 
+                    wellknown safari parks. Added some anchors to main parts of the web page and some pictures make it actractive. 
+
+                </p>
+        
+                <p><a href="WildLife/wildlife.html" class="links">Link to Individual web page</a></p>
+                <br>
+        
+        
+                <h2>Main</h2>
+        
+                <p>
+                    Student 2 creted the home page. All other members help to link their work. Together we added some actractive things. 
+                </p>
+                
+                <p><a href="../Student02/Home/Home.html" class="links">Link to home page</a></p>
+
+
+                <br><br><br>
+        
+                <a href="#top" class="links">Back to the top</a>
+            </div>
+
+        </div>
+
+        <div class="Image">
+            <img src="StudentDetails/Student/janiru.jpg" alt="Student" class="studentimg">
+        </div>
+    </div>
+</body>
+</html>
