@@ -1,0 +1,48 @@
+
+
+        h1 {
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+            font-size: 40px;
+            
+            
+           
+        }
+       
+        
+        #header {
+            text-align: center;
+            
+        }
+        #header img {
+            max-width: 100%;
+            height: auto;
+      
+        }
+        body{
+            background-color: #CEDDD4;
+
+        }
+        #header {
+        position: relative;
+        text-align: center;
+       
+    }
+    
+    
+    #groupId1 circle:hover {
+        fill: #DDF1DC; /* Change the fill color on hover */
+        cursor: pointer; /* Change the cursor to a pointer on hover */
+      }
+  
+      #groupId1 text:hover {
+        fill:  #DDF1DC; /* Change the text color on hover */
+        cursor: pointer; /* Change the cursor to a pointer on hover */
+      }
+      
+    
