@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page editor</title>
+    <style>
+        body {
+            margin: 0;
+            padding-right: 2cm;
+            padding-left: 2cm;
+            padding-bottom: 2cm;
+            font-size: 150%;
+            
+        }
+
+        .main_container {
+            display: grid;
+            grid-template-columns: 60% 30%;
+            background-color: rgb(27, 81, 132);
+            padding: 2cm;
+            border-radius: 0.5rem;
+            gap: 2cm;
+        }
+
+        .text {
+            text-align: center;
+            color: #fff;
+        }
+
+        
+        .links{
+            padding: 10px;
+            background-color: rgb(89, 210, 210);
+            border-radius: 10px;
+        }
+        .links:hover{
+            background-color: antiquewhite;
+        }
+        .studentimg{
+            width: 80%;
+            height: auto;
+            display: block;
+            float: right;
+            border-radius: 10px;
+        }
+        .studentimg:hover{
+            transform:scale(1.1);
+            transition: 0.4s;
+        }
+        .studentimg:not(:hover){
+            transform:scale(1);
+            transition: 0.4s;
+        }
+        h1{
+            text-align: center;
+            background-color:rgb(27, 81, 132);
+            color:white;
+        }
+        p{
+            text-align: justify;
+        }
+
+        .backtop{
+            color: #fff;
+            float: left;
+            background-color: blueviolet;
+            padding: 0.5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Page Editor</h1>
+    <div class="main_container">
+        <div class="text">
+            <p>Name: Sasanka Bandara</p>
+            <p>Uow number: w1998841</p> 
+            <p>IIT Id: 20220496</p>
+            <p>Role: Student 02</p>
+            <br>
+            <p>The following pages were edited by me!</p>
+
+            <div>
+                <h2>Home</h2>
+
+                <p>
+                    Created navigation bar and footer to access all the main 
+                    web pages that students made and linked them all. Used a 
+                    background video. and used images and CSS to decorate web ppage 
+                    and java script to navigation bar. aditional individual pages are connected to
+                    our servises part and user can access them.  
+                </p>
+                <p><a href="Home/Home.html" class="links">Link to home page</a></p>
+                <br>
+            
+            
+                <h2>Feedback form</h2>
+        
+                <p>
+                    This form is Created by using advanced javascript, CSS and advanced HTML.
+                    use emojies that connected to radio buttons to take users reaction about website.
+                    Responses of the user prepared send to all the team members when it submit. 
+                </p>
+        
+                <p><a href="FeedbackForm/Feedback.html" class="links">Link to feedback form</a></p>
+                <br>
+            
+                <h2>Individual web page</h2>
+            
+                <p>
+                    we selected the tuarism website. So my individual web page is about places to 
+                    visit in sri lanka. I created it using  CSS and Html. It contains iamges and short 
+                    discription about tuarism popular places in srilanka. End of page it contains quick access buttons 
+                    to diferent places in that website.
+                </p>
+        
+                <p><a href="Individualpage/Individualpage.html" class="links">Link to individual web page</a></p>
+                <br>
+        
+        
+                <h2>External CSS file</h2>
+        
+                <p>
+                    All the pages that our team created has navigation bar and footer section external css file 
+                    is use to decorate them and decorate scrolling bar.
+                </p>
+        
+                <a href="#top" class="backtop" >Back to the top</a>
+            </div>
+
+        </div>
+
+        <div class="Image">
+            <img src="../Student03/StudentDetails/Student/sasanka.jpg" alt="Student" class="studentimg">
+        </div>
+    </div>
+</body>
+</html>

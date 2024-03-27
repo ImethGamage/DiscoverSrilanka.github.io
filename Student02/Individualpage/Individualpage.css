@@ -1,0 +1,100 @@
+
+/*best location section*/
+
+
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-size: 3rem;
+    background-color: darksalmon;
+    padding: 2rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+.boxes-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.boxes-container .boxes {
+    flex: 30rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    background-color: lightgray; 
+  }
+  
+.boxes-container .boxes:hover {
+    background-color: rgb(193, 193, 193); 
+}
+
+.boxes-container .boxes img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.boxes-container .boxes .discription{
+    padding: 1rem;
+}
+
+.boxes-container .boxes .discription p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-transform: none;
+    margin-bottom: 0.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: navy;
+    text-transform: uppercase; 
+    margin-bottom: 1rem; 
+}
+
+.view-more {
+    font-size: 15px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s;
+
+  }
+  
+.view-more:hover {
+    background-color: red;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.buttons-container .button {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: background-color 0.5s;
+}
+
+.buttons-container .button:hover {
+    background-color: red;
+}
