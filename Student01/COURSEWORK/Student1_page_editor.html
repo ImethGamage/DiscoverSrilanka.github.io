@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page editor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 2cm;
+            font-size: 150%;
+            
+        }
+
+        .main_container {
+            display: grid;
+            grid-template-columns: 60% 30%;
+            background-color: rgb(27, 81, 132);
+            padding: 2cm;
+            border-radius: 0.5rem;
+            gap: 2cm;
+        }
+
+
+
+        .details{
+            margin-top: 50PX;
+        }
+
+
+        .text {
+            text-align: center;
+            color: #fff;
+        }
+
+        
+        .links{
+            padding: 10px;
+            background-color: rgb(89, 210, 210);
+            border-radius: 10px;
+            
+        }
+
+        .anchor-button {
+         padding: 15px 30px; /* Increase padding to adjust button size */
+         margin-left: 60%;
+        background-color: rgb(100, 220, 220);
+        border-radius: 10px;
+        border: none; 
+      
+      }
+
+       .anchor-button a {
+         text-decoration: none; 
+         color: rgb(27, 81, 132); 
+     }
+
+
+     .anchor-button:hover {
+        background-color: antiquewhite; /* Change background color on hover */
+        cursor: pointer; 
+}
+
+
+        .links:hover{
+            background-color: antiquewhite;
+        }
+        .studentimg{
+            width: 80%;
+            height: auto;
+            display: block;
+            float: right;
+            border-radius: 10px;
+        }
+        .studentimg:hover{
+            transform:scale(1.1);
+            transition: 0.4s;
+        }
+        .studentimg:not(:hover){
+            transform:scale(1);
+            transition: 0.4s;
+        }
+        h1{
+            text-align: center;
+            background-color:rgb(27, 81, 132);
+            color:white;
+        }
+
+       
+        p{
+            text-align: justify;
+        }
+
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Page Editor</h1>
+    <div class="main_container">
+        <div class="text">
+            <p>Name: Binul De Silva </p>
+            <p>Uow number:  w19988501 </p> 
+            <p>IIT Id:  20220501 </p>
+            <p>Role:  Student 1 </p>
+            <p>The following pages were edited by me!</p>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="Details">
+                <h2>Presenation page</h2>
+
+                <p>
+                  A presentation page with title and the name of everyone in the group. This can be a sort of splash screen, and after 4 seconds, a second page will be displayed (Main Web page).
+                </p>
+                <p><a href="index.html" class="links">Link to Presentation page</a></p>
+                <br>
+            
+            
+                <h2>Buy Product</h2>
+        
+                <p>
+                    Created Buy product page using 5 items which are ralated to Tourism industry. By mentioning the price of items when you press proceed you will directly log in to a checkout page. 
+                </p>
+        
+                <p><a href="purchase.html" class="links">Link to Purchase page</a></p>
+                <br>
+            
+                <h2>Hotel</h2>
+            
+                <p>
+                   Created a additional page using HTML and CSS.<br>When user hoverd on the image the description will be shown. <br>At th bottom of the page I added anchor button to go to top of the webpage
+                </p>
+        
+                <p><a href="hotel.html" class="links">Link to individual web page</a></p>
+                <br>
+                <br>
+                <br>
+        
+        
+                <button class="anchor-button"><a href="#top">Back to the top</a></button>
+            </div>
+
+        </div>
+
+        <div class="Image">
+            <img src="../../Student03/StudentDetails/Student/binul.jpg" alt="Student" class="studentimg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="../../Student02/ExternalCSS_for_all_pages.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+  <section class="header">
+    <a href="../../Student02/Home/Home.html" class="logo">Discover <span>Sri Lanka.</span></a>
+    <nav class="navbar">
+      <a href="../../Student02/Home/Home.html">Home</a>
+      <a href="purchase.html" id="active_page">Shop</a>
+      <a href="../../Student03/Quiz/Quiz.html">Quiz</a>
+      <a href="../../Student04/SiteMap/Sitemap.html">Site map</a>
+      <a href="../../Student02/FeedbackForm/Feedback.html">Feedback form</a>
+      <a href="../../Student04/Imggallary/imagegallary.html">Gallery</a>
+      <a href="../../Student03/StudentDetails/Stdent.html">About us</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+  <h1>Welcome to our Shop!</h1>
+  <form action="chekout page.html" method="POST" onsubmit="return validateForm()">
+    <div>
+      <label for="currency">Select Currency:</label>
+      <select id="currency" onchange="updatePrices()">
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+        <option value="lkr">LKR</option>
+        <option value="inr">INR</option>
+      </select>
+    </div>
+
+    <div class="items-container">
+      <div class="item">
+        <h2>Lackware pots</h2>
+        <img src="images/batik3.jpeg" alt="Lackware pots">
+        <p>Price: $10</p>
+        <button onclick="addItem('Lackware pots',10)">Buy it</button>
+      </div>
+      <div class="item">
+        <h2>Tea</h2>
+        <img src="images/tea.jpeg" alt="Tea">
+        <p>Price: $5</p>
+      <button onclick="addItem('tea',5)">Buy it</button>
+    </div>
+    <div class="item">
+        <h2>Spices</h2>
+        <img src="images/spices2.jpeg" alt="Spices">
+        <p>Price: $3</p>
+      <button onclick="addItem('Spices',3)">Buy it</button>
+    </div>
+    <div class="item">
+        <h2>Coconut spoons</h2>
+        <img src="images/shell3.jpeg" alt="spoons">
+        <p>Price: $2</p>
+      <button onclick="addItem('Coconut spoons',2)">Buy it</button>
+    </div>
+    <div class="item">
+        <h2>Cinamon</h2>
+        <img src="images/cinnamon3.jpeg" alt="cinamon">
+        <p>Price: $6</p>
+      <button onclick="addItem('cinnamon',6)">Buy it</button>
+    </div>
+  </div>
+
+    <div class="cart">
+      <h2>Purchase Transaction</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0</p>
+    </div>
+
+    
+    <input type="submit" value="Proceed to Checkout" onclick="window.location.href='chekoutpage.html'; return false;">
+  </form>
+  <script>
+    let cartItems = [];
+    let total = 0;
+
+    function addItem(name, price) {
+      cartItems.push({ name, price });
+      total += price;
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartList = document.getElementById('cart-items');
+      cartList.innerHTML = '';
+      cartItems.forEach((item) => {
+        const li = document.createElement('li');
+        li.innerText = `${item.name} - $${item.price}`;
+        cartList.appendChild(li);
+      });
+
+      const totalElement = document.getElementById('total');
+      totalElement.innerText = `Total: $${total}`;
+    }
+
+    
+    function validateForm() {
+      const selectedProducts = document.querySelectorAll('input[type="checkbox"]:checked');
+      if (selectedProducts.length === 0) {
+        alert("Added to cart.");
+        return false;
+      }
+
+    }
+
+  </script>
+
+   <!--footer section -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="../../Student02/Home/Home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="purchase.html"><i class="fas fa-angle-right"></i>Shop</a>
+                <a href="../../Student03/Quiz/Quiz.html"><i class="fas fa-angle-right"></i>Quiz</a>
+                <a href="../../Student04/SiteMap/Sitemap.html"><i class="fas fa-angle-right"></i>Site map</a>
+                <a href="../../Student02/FeedbackForm/Feedback.html"><i class="fas fa-angle-right"></i>Feedback form</a>
+                <a href="../../Student04/Imggallary/imagegallary.html"><i class="fas fa-angle-right"></i>Gallery</a>
+                <a href="../../Student03/StudentDetails/Stdent.html"><i class="fas fa-angle-right"></i>About us</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Our team</h3>
+                <a href="../COURSEWORK/Student1_page_editor.html"><i class="fas fa-angle-right"></i>Binul</a>
+                <a href="../../Student02/page_editor(sasanka).html "><i class="fas fa-angle-right"></i>Sasanka</a>
+                <a href="../../Student03/pageEditor3.html "><i class="fas fa-angle-right"></i>Janiru</a>
+                <a href="../../Student04/Student4_page_editor.html "><i class="fas fa-angle-right"></i>Imeth</a>
+                
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://instagram.com/?lang=en"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://linkedin.com/?lang=en"><i class="fab fa-linkedin"></i>Linkedin</a>
+                
+            </div>
+        </div>
+
+        <div class="credit"> Created by <a href="../../Student01/COURSEWORK/Student1_page_editor.html"><span>Binul De Silva</span></a></div>
+
+    </section>
+</body>
+</html>
